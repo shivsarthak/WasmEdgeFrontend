@@ -108,7 +108,7 @@ export default function Home() {
                         }
                       }
                     />
-                    <a target='_blank' href={`http://app.wasmedge.skiflabs.com?github=${repoLink}`}>
+                    <a target='_blank' href={`https://app.wasmedge.skiflabs.com?github=${repoLink}`}>
                       <div className=" bg-gray-900 hover:bg-gray-800 px-4 py-3 ml-2  rounded-lg text-md text-white  flex" >
                         <img src='https://icon-library.com/images/github-icon-white/github-icon-white-6.jpg' alt='github' className=' h-6 pr-1' />
                         Clone from
