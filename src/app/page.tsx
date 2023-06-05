@@ -1,14 +1,8 @@
 "use client"
 import { Transition } from '@headlessui/react';
-import Image from 'next/image'
 import Link from 'next/link';
 import { useEffect, useRef, useState } from 'react';
 
-import Feature1 from 'public/feature1.png'
-import Feature2 from 'public/feature2.png'
-import Feature3 from 'public/feature3.png'
-
-import VideoThumb from 'public/demo.png'
 
 export default function Home() {
 
@@ -116,7 +110,7 @@ export default function Home() {
                     />
                     <a target='_blank' href={`http://localhost:5173?github=${repoLink}`}>
                       <div className=" bg-gray-900 hover:bg-gray-800 px-4 py-3 ml-2  rounded-lg text-md text-white  flex" >
-                        <img src='https://icon-library.com/images/github-icon-white/github-icon-white-6.jpg' className=' h-6 pr-1' />
+                        <img src='https://icon-library.com/images/github-icon-white/github-icon-white-6.jpg' alt='github' className=' h-6 pr-1' />
                         Clone from
                         <span className=' font-bold'>
                           &nbsp;Github&nbsp;
@@ -134,7 +128,7 @@ export default function Home() {
             <div>
               <div className="relative flex justify-center mb-8" data-aos="zoom-y-out" data-aos-delay="450">
                 <div className="flex flex-col justify-center">
-                  <Image src={VideoThumb} width={768} height={432} alt={"Demo"} />
+                  <img src="/demo.png" width={768} height={432} alt={"Demo"} />
                 </div>
               </div>
             </div>
@@ -211,10 +205,9 @@ export default function Home() {
                 leaveTo="opacity-0 -translate-y-16"
               >
                 <div className="relative inline-flex flex-col">
-                  <Image className="max-w-none rounded" height="500" src={Feature1} alt="Features bg" />
+                  <img className="max-w-none rounded h-[500px]" src="/feature1.png" alt="Features bg" />
                 </div>
               </Transition>
-
               <Transition
                 show={tab === 2}
                 enter="transition ease-in-out duration-700 transform order-first"
@@ -225,7 +218,7 @@ export default function Home() {
                 leaveTo="opacity-0 -translate-y-16"
               >
                 <div className="relative inline-flex flex-col">
-                  <Image className="max-w-none rounded" height="500" src={Feature2} alt="Features bg" />
+                  <img className="max-w-none rounded  h-[500px]" src="/feature2.png" alt="Features bg" />
                 </div>
               </Transition>  <Transition
                 show={tab === 3}
@@ -237,7 +230,7 @@ export default function Home() {
                 leaveTo="opacity-0 -translate-y-16"
               >
                 <div className="relative inline-flex flex-col">
-                  <Image className="max-w-none rounded" height="500" src={Feature3} alt="Features bg" />
+                  <img className="max-w-none rounded  h-[500px]" height="500" src="/feature3.png" alt="Features bg" />
                 </div>
               </Transition>
 
