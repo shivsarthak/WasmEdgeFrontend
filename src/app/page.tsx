@@ -60,7 +60,7 @@ export default function Home() {
       </header>
       <main>
         <div className="absolute left-1/2 transform -translate-x-1/2 bottom-0 pointer-events-none -z-50 w-full" aria-hidden="true">
-          <svg viewBox="0 0 1360 578" xmlns="http://www.w3.org/2000/svg">
+          <svg viewBox="0 0 1360 578" xmlns="https://www.w3.org/2000/svg">
             <defs>
               <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="illustration-01">
                 <stop stopColor="#FFF" offset="0%" />
@@ -90,7 +90,7 @@ export default function Home() {
                 </p>
                 <div className="" data-aos="zoom-y-out" data-aos-delay="300">
                   <div className='flex flex-row justify-center'>
-                    <a href="http://localhost:5173" >
+                    <a href="https://app.wasmedge.skiflabs.com" >
                       <div className='bg-blue-600 hover:bg-blue-700 px-8 py-2   rounded-md text-lg text-white '>
                         Start Quickstart Project
                       </div>
@@ -108,7 +108,7 @@ export default function Home() {
                         }
                       }
                     />
-                    <a target='_blank' href={`http://localhost:5173?github=${repoLink}`}>
+                    <a target='_blank' href={`http://app.wasmedge.skiflabs.com?github=${repoLink}`}>
                       <div className=" bg-gray-900 hover:bg-gray-800 px-4 py-3 ml-2  rounded-lg text-md text-white  flex" >
                         <img src='https://icon-library.com/images/github-icon-white/github-icon-white-6.jpg' alt='github' className=' h-6 pr-1' />
                         Clone from
